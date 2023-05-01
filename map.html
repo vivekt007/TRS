@@ -30,15 +30,22 @@
         <div class="msec1-row1 container">
             <div class="msec1-row1-col1">
 
-                <iframe
+                <!-- <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.05382530402!2d74.8234847154078!3d16.16617438882112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0afd4a211138f%3A0x355a18bb59aca1e4!2sKLE%20Mahadevappanna%20Munavalli%20School%2C%20Gokak%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1677076528769!5m2!1sen!2sin"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                    <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                            style="height:100%;width:100%;border:0;" frameborder="0"
+                            src="https://www.google.com/maps/embed/v1/place?q=Hubli,+Karnataka,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div><a class="embed-ded-maphtml" href="https://www.bootstrapskins.com/themes"
+                        id="enable-map-data">premium bootstrap themes</a>
+                </div>
 
             </div>
             <div class="msec1-row1-col2">
                 <div class="topheading">
-                    <!-- <h1>TRF</h1> -->
                 </div>
                 <div class="src-dest">
                     <div class="src-dest-row1">
@@ -60,10 +67,7 @@
                             <h6> Preferences </h6>
                         </div>
                         <div class="r3col2 cols">
-                            <ul>
-                                <li><p> Relegious</p></li>
-                                <li><p> Hill station</p></li>
-                            </ul>
+                            <p>Relegious, Hill station</p>
                         </div>
                     </div>
                     <div class="src-dest-row4">
@@ -71,7 +75,7 @@
                         <div class="r4col2 cols"> ISKCON Temple</div>
                     </div>
                     <div class="src-dest-row5">
-                        <div class="r5col1 cols"><button>Change</button></div>
+                        <div class="r5col1 cols" id="change-btn"><button>Change</button></div>
                         <div class="r5col2 cols"><button id="myButton">Home</button></div>
                     </div>
                 </div>
@@ -84,8 +88,9 @@
         location.href = "index.html";
     };
 
-
-
+    document.getElementById("change-btn").onclick = function () {
+        location.href = "plan.html";
+    };
 </script>
 
 </html>

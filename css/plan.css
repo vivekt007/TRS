@@ -7,19 +7,19 @@
     box-sizing: border-box;
 }
 
-section{
+section {
     background: url(https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJhdmVsJTIwYXJ0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container{
+.container {
     background-color: rgba(255, 255, 255, 0.192);
     backdrop-filter: blur(5px);
     border-radius: 5px;
 }
 
-#prow1{
+#prow1 {
     background-color: aqua;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ section{
     width: 100%;
 }
 
-.psec1-row1{
+.psec1-row1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,27 +37,27 @@ section{
     padding: 50px;
 }
 
-.psec1-row1-col1{
+.psec1-row1-col1 {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.psec1-row1-col2{
+.psec1-row1-col2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.live-loc input[type="search"]{
+.live-loc input[type="search"] {
     width: 100%;
     border: none;
     padding: 10px;
 }
 
-form input[type="submit"]{
+form input[type="submit"] {
     background-color: black;
     border: none;
     color: white;
@@ -66,11 +66,11 @@ form input[type="submit"]{
     opacity: 0.7;
 }
 
-form input[type="submit"]:hover{
+form input[type="submit"]:hover {
     opacity: 1;
 }
 
-#myButton{
+#myButton {
     background-color: rgb(156, 13, 13);
     border: none;
     color: white;
@@ -79,26 +79,31 @@ form input[type="submit"]:hover{
     opacity: 0.7;
 }
 
-#myButton:hover,#location-details button:hover{
+#myButton:hover,
+#location-details button:hover {
     opacity: 1;
 }
 
-.live-loc{
+.live-loc {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.live-loc img{
+.live-loc img {
     width: 3em;
 }
 
-#location-details button{
+#location-details button {
     background-color: black;
     border: none;
     color: white;
     padding: 10px;
     border-radius: 7px;
     opacity: 0.7;
+}
+
+input[type="checkbox"] {
+    outline: 1px solid black;
 }
