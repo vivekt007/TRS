@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/signup.css">
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="web-detail2">
+            <h1>TRS</h1>
+            <h2>Keep it special</h2>
+        </div>
+
+        <div class="signup-container">
+            <form action="#" class="container">
+                <h2>Create new account</h2>
+
+                <section class="sign-row1 rows">
+                    <div class="sign-r1col1 columns">
+                        <label for="name">First name</label>
+                        <input type="text" class="form-inp" name="firstname" placeholder="Enter your first name"
+                            required>
+                    </div>
+                    <div class="sign-r1col2 columns">
+                        <label for="name">Last name</label>
+                        <input type="text" class="form-inp" name="lirstname" placeholder="Enter your last name"
+                            required>
+                    </div>
+                </section>
+                <section class="sign-row2 rows">
+                    <div class="sign-r2col1 columns">
+                        <label for="email">Email id</label>
+
+                        <input type="email" class="form-inp" name="emailid" placeholder="Enter your email id" required>
+                    </div>
+                    <div class="sign-r2col2 columns">
+                        <label for="telphone">Phone no</label>
+
+                        <input type="tel" class="form-inp" name="emailid" placeholder="Enter your phone no" required>
+                    </div>
+                </section>
+                <section class="sign-row3 rows">
+                    <div class="sign-r3col1 columns">
+                        <label for="pass1">Password</label>
+
+                        <input type="password" class="form-inp" name="pass1" placeholder="8+ characters password">
+
+                        <input type="password" class="form-inp" name="pass2" placeholder="Confirm password">
+                    </div>
+                    <div class="sign-r3col2 columns">
+                        <!-- <label for="passconfirm">___</label> -->
+                    </div>
+                </section>
+                <section class="sign-row4 rows">
+                    <p>
+                        <input type="checkbox" name="terms" id="terms">
+                        Creating an account means you’re okay with our Terms of Service,<a href="#">Privacy
+                            Policy</a> ,
+                        and our default <a href="#">Notification Settings.
+                    </p></a>
+                </section>
+                <section class="sign-row5 rows">
+                    <div class="buttons">
+                        <input type="submit" value="Signin" id="sign-submit">
+                        
+                        <button class="button"  id="myButton">cancel</button>
+                    </div>
+                    <a href="Login.html">Already have an account?</a>
+                </section>
+            </form>
+        </div>
+        <div class="web-detail1">
+            <h1>TRS</h1>
+            <h2>Keep it special</h2>
+        </div>
+    </main>
+</body>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "index.html";
+    };
+</script>
+
+</html>

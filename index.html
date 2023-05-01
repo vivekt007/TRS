@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script defer  src="app.js"></script>
+</head>
+
+<body>
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a id="top-name" class="navbar-brand" href="index.html">TRS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </nav>
+
+    <main>
+        <section class="hrow1">
+            <h1>Make a Trip</h1>
+            <div class="hr1row1">
+                <input type="search" placeholder="Where to?" required>
+                <button class="btns"><a href="plan.html">Go</a></button>
+            </div>
+        </section>
+
+        <section class="hrow2">
+            <div class="heading">
+                <h1>Places</h1>
+            </div>
+            <div class="hr2row1 recommended">
+                <div class="hr2r1col1 cards">
+                    <img src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2l0eXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <p>New York</p>
+                </div>
+                <div class="hr2r1col2 cards">
+                    <img src="https://images.unsplash.com/photo-1619120238346-978e07731e77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dG91cmlzbXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <p>Maldives</p>
+                </div>
+                <div class="hr2r1col3 cards">
+                    <img src="https://images.unsplash.com/photo-1576487248805-cf45f6bcc67f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRvdXJpc218ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <p>Taj Mahal</p>
+                </div>
+                <div class="hr2r1col4 cards">
+                    <img src="https://images.unsplash.com/photo-1590153739486-208b4dbb473c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHRvdXJpc218ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <p>Iceland</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hrow3">
+            <div class="heading">
+                <h2>Pick a vibe</h2>
+            </div>
+            <div class="h3row2">
+                <div class="main">
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('popular')">Popular</button>
+                        <button class="btn" onclick="filterSelection('Relegious')">Religious</button>
+                        <button class="btn" onclick="filterSelection('nature')">Nature</button>
+                        <button class="btn" onclick="filterSelection('city')">City</button>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="column Relegious">
+                            <div class="content">
+                                <img src="http://media.kulfyapp.com/oIUZaX/oIUZaX.jpg" alt="Ram Mandir"
+                                    style="width:100%">
+                                <h4>Ram Mandir</h4>
+                            </div>
+                        </div>
+                        <div class="column Relegious">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1609609830354-8f615d61b9c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWRpeW9naXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="Coimbatore" style="width:100%">
+                                <h4>Coimbatore</h4>
+                            </div>
+                        </div>
+                        <div class="column Relegious">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRlbXBsZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="Chennai" style="width:100%">
+                                <h4>Chennai</h4>
+                            </div>
+                        </div>
+
+                        <div class="column nature">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJlYWNofGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="Maldives" style="width:100%">
+                                <h4>Maldives</h4>
+                            </div>
+                        </div>
+                        <div class="column nature">
+                            <div class="content">
+                                <img src="https://plus.unsplash.com/premium_photo-1676667572811-7eb187fe754c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJlYWNofGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="outdoors" style="width:100%">
+                                <h4>Outdoors</h4>
+                            </div>
+                        </div>
+                        <div class="column nature">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhY2h8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="Nature" style="width:100%">
+                                <h4>Mountains</h4>
+                            </div>
+                        </div>
+
+                        <div class="column city">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2l0eXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="Jersey City" style="width:100%">
+                                <h4>Jersy City</h4>
+                            </div>
+                        </div>
+                        <div class="column city">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2l0eXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="New York" style="width:100%">
+                                <h4>New York</h4>
+                            </div>
+                        </div>
+                        <div class="column city">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2l0eXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="Saint Paul" style="width:100%">
+                                <h4>Saint paul</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="trf-footer">
+        <div class="frow1">
+            <h1 class="heading"><a href="index.html">TRF.</a></h1>
+        </div>
+        <div class="frow2">
+            <a href="#" class="fa fa-facebook"></a>
+
+            <a href="#" class="fa fa-instagram"></a>
+
+            <button onclick ="topFunction()" id="mybtn" title="Go to top" >TOP</button>
+        </div>
+    </footer>
+
+</body>
+<script>
+    
+</script>
+
+</html>
