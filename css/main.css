@@ -39,6 +39,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
 }
 
 .hr1row1 {
@@ -70,6 +71,30 @@ section {
     border-radius: 5px;
     height: 40px;
 }
+
+.hr1row2{
+    /* gap: 20px; */
+}
+
+.hr1row2 button{
+    width: fit-content;
+    padding: 1em;
+    border: none;
+    border-radius: 1em;
+    background-color: black;
+    backdrop-filter: blur(10px);
+    opacity: 0.7;
+}
+
+.hr1row2 button:hover{
+    opacity: 1;
+}
+
+.hr1row2>button>a{
+    color: white;
+    text-decoration: none;
+}
+
 
 .hr1row1 button:hover{
     background-color: white;
